@@ -254,9 +254,9 @@ class Capture
             unlink($cookiesPath);
         }
 
-        if ($returnCode !== 0) {
-            throw new PhantomJsException($output);
-        }
+//        if ($returnCode !== 0) {
+//            throw new PhantomJsException($output);
+//        }
 
         return file_exists($this->imageLocation);
     }

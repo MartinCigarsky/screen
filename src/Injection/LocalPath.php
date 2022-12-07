@@ -17,7 +17,6 @@ class LocalPath extends Url
      * LocalPath constructor.
      *
      * @throws FileNotFoundException
-     * @throws InvalidUrlException
      */
     public function __construct(string $url)
     {
@@ -28,7 +27,7 @@ class LocalPath extends Url
         }
 
         $this->src = self::sanitize($filePath);
-        parent::__construct($url);
+//        parent::__construct($url);
     }
 
     /**
